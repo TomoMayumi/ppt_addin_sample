@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab id="MyTab" label="アドインタブ">
+        <group id="MyGroup"
+               label="アドイングループ">
+          <button id="button2" label="アドインボタン" onAction="Button_Click"/>
+          <menu id="MySubMenu2" label="My Submenu2" >
+            <button id="MyButton2" label="Button on submenu2" />
+          </menu>
+          <gallery id="galleryOne2" label="My Gallery2">
+            <item id="item21" imageMso="HappyFace" />
+            <item id="item22" imageMso="HappyFace" />
+            <item id="item23" imageMso="HappyFace" />
+            <item id="item24" imageMso="HappyFace" />
+          </gallery>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+  <contextMenus>
+    <contextMenu idMso="ContextMenuShape">
+      <button id="button1" label="シェイプの右クリックメニューコマンド" onAction="Button_Click"/>
+      <menu id="MySubMenu1" label="My Submenu1" >
+        <button id="MyButton1" label="Button on submenu1" />
+      </menu>
+      <gallery id="galleryOne1" label="My Gallery1">
+        <item id="item11" imageMso="HappyFace" />
+        <item id="item12" imageMso="HappyFace" />
+        <item id="item13" imageMso="HappyFace" />
+        <item id="item14" imageMso="HappyFace" />
+      </gallery>
+    </contextMenu>
+    <contextMenu idMso="ContextMenuActiveXControl">
+      <button id="ContextMenuActiveXControlButton" label="ContextMenuActiveXControl" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuAudio">
+      <button id="ContextMenuAudioButton" label="ContextMenuAudio" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartArea">
+      <button id="ContextMenuChartAreaButton" label="ContextMenuChartArea" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartAxis">
+      <button id="ContextMenuChartAxisButton" label="ContextMenuChartAxis" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartAxisTitle">
+      <button id="ContextMenuChartAxisTitleButton" label="ContextMenuChartAxisTitle" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartBackWall">
+      <button id="ContextMenuChartBackWallButton" label="ContextMenuChartBackWall" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartDataLabel">
+      <button id="ContextMenuChartDataLabelButton" label="ContextMenuChartDataLabel" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartDataLabels">
+      <button id="ContextMenuChartDataLabelsButton" label="ContextMenuChartDataLabels" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartDataPoint">
+      <button id="ContextMenuChartDataPointButton" label="ContextMenuChartDataPoint" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartDataSeries">
+      <button id="ContextMenuChartDataSeriesButton" label="ContextMenuChartDataSeries" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartDataTable">
+      <button id="ContextMenuChartDataTableButton" label="ContextMenuChartDataTable" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartDisplayUnit">
+      <button id="ContextMenuChartDisplayUnitButton" label="ContextMenuChartDisplayUnit" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartDownBars">
+      <button id="ContextMenuChartDownBarsButton" label="ContextMenuChartDownBars" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartDropLines">
+      <button id="ContextMenuChartDropLinesButton" label="ContextMenuChartDropLines" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartErrorBars">
+      <button id="ContextMenuChartErrorBarsButton" label="ContextMenuChartErrorBars" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartFloor">
+      <button id="ContextMenuChartFloorButton" label="ContextMenuChartFloor" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartGridlines">
+      <button id="ContextMenuChartGridlinesButton" label="ContextMenuChartGridlines" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartHighLowLine">
+      <button id="ContextMenuChartHighLowLineButton" label="ContextMenuChartHighLowLine" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartLeaderLines">
+      <button id="ContextMenuChartLeaderLinesButton" label="ContextMenuChartLeaderLines" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartLegend">
+      <button id="ContextMenuChartLegendButton" label="ContextMenuChartLegend" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartLegendEntry">
+      <button id="ContextMenuChartLegendEntryButton" label="ContextMenuChartLegendEntry" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartPlotArea">
+      <button id="ContextMenuChartPlotAreaButton" label="ContextMenuChartPlotArea" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartSeriesLine">
+      <button id="ContextMenuChartSeriesLineButton" label="ContextMenuChartSeriesLine" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartSideWall">
+      <button id="ContextMenuChartSideWallButton" label="ContextMenuChartSideWall" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartTitle">
+      <button id="ContextMenuChartTitleButton" label="ContextMenuChartTitle" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartTrendline">
+      <button id="ContextMenuChartTrendlineButton" label="ContextMenuChartTrendline" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartTrendlineLabel">
+      <button id="ContextMenuChartTrendlineLabelButton" label="ContextMenuChartTrendlineLabel" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartUpBars">
+      <button id="ContextMenuChartUpBarsButton" label="ContextMenuChartUpBars" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuChartWalls">
+      <button id="ContextMenuChartWallsButton" label="ContextMenuChartWalls" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuCommentMarker">
+      <button id="ContextMenuCommentMarkerButton" label="ContextMenuCommentMarker" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuCurve">
+      <button id="ContextMenuCurveButton" label="ContextMenuCurve" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuDrawnObject">
+      <button id="ContextMenuDrawnObjectButton" label="ContextMenuDrawnObject" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuEndShow">
+      <button id="ContextMenuEndShowButton" label="ContextMenuEndShow" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuFrame">
+      <button id="ContextMenuFrameButton" label="ContextMenuFrame" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuGraphicOleClassic">
+      <button id="ContextMenuGraphicOleClassicButton" label="ContextMenuGraphicOleClassic" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuGraphicsCompatibility">
+      <button id="ContextMenuGraphicsCompatibilityButton" label="ContextMenuGraphicsCompatibility" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuGuide">
+      <button id="ContextMenuGuideButton" label="ContextMenuGuide" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuInk">
+      <button id="ContextMenuInkButton" label="ContextMenuInk" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuLabelSection">
+      <button id="ContextMenuLabelSectionButton" label="ContextMenuLabelSection" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuMotionPath">
+      <button id="ContextMenuMotionPathButton" label="ContextMenuMotionPath" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuNotesEditText">
+      <button id="ContextMenuNotesEditTextButton" label="ContextMenuNotesEditText" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuObjectEditPoint">
+      <button id="ContextMenuObjectEditPointButton" label="ContextMenuObjectEditPoint" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuObjectEditSegment">
+      <button id="ContextMenuObjectEditSegmentButton" label="ContextMenuObjectEditSegment" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuObjectsGroup">
+      <button id="ContextMenuObjectsGroupButton" label="ContextMenuObjectsGroup" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuOfficePreviewHandlerPowerPoint">
+      <button id="ContextMenuOfficePreviewHandlerPowerPointButton" label="ContextMenuOfficePreviewHandlerPowerPoint" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuPathPoint">
+      <button id="ContextMenuPathPointButton" label="ContextMenuPathPoint" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuPathSegment">
+      <button id="ContextMenuPathSegmentButton" label="ContextMenuPathSegment" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuPicture">
+      <button id="ContextMenuPictureButton" label="ContextMenuPicture" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuPodiumMonitorSettings">
+      <button id="ContextMenuPodiumMonitorSettingsButton" label="ContextMenuPodiumMonitorSettings" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuRevision">
+      <button id="ContextMenuRevisionButton" label="ContextMenuRevision" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuRightDragDrop">
+      <button id="ContextMenuRightDragDropButton" label="ContextMenuRightDragDrop" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuShape">
+      <button id="ContextMenuShapeButton" label="ContextMenuShape" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuShapeConnector">
+      <button id="ContextMenuShapeConnectorButton" label="ContextMenuShapeConnector" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuShapeFreeform">
+      <button id="ContextMenuShapeFreeformButton" label="ContextMenuShapeFreeform" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuShowBrowse">
+      <button id="ContextMenuShowBrowseButton" label="ContextMenuShowBrowse" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuShowHyperlink">
+      <button id="ContextMenuShowHyperlinkButton" label="ContextMenuShowHyperlink" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuShowPointerOptions">
+      <button id="ContextMenuShowPointerOptionsButton" label="ContextMenuShowPointerOptions" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSlideGap">
+      <button id="ContextMenuSlideGapButton" label="ContextMenuSlideGap" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSlideShow">
+      <button id="ContextMenuSlideShowButton" label="ContextMenuSlideShow" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSlideSorter">
+      <button id="ContextMenuSlideSorterButton" label="ContextMenuSlideSorter" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSlideSync">
+      <button id="ContextMenuSlideSyncButton" label="ContextMenuSlideSync" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSmartArtBackground">
+      <button id="ContextMenuSmartArtBackgroundButton" label="ContextMenuSmartArtBackground" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSmartArtContentPane">
+      <button id="ContextMenuSmartArtContentPaneButton" label="ContextMenuSmartArtContentPane" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSmartArtEdit1DShape">
+      <button id="ContextMenuSmartArtEdit1DShapeButton" label="ContextMenuSmartArtEdit1DShape" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSmartArtEdit1DShapeText">
+      <button id="ContextMenuSmartArtEdit1DShapeTextButton" label="ContextMenuSmartArtEdit1DShapeText" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSmartArtEditSmartArt">
+      <button id="ContextMenuSmartArtEditSmartArtButton" label="ContextMenuSmartArtEditSmartArt" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSmartArtEditText">
+      <button id="ContextMenuSmartArtEditTextButton" label="ContextMenuSmartArtEditText" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuSpell">
+      <button id="ContextMenuSpellButton" label="ContextMenuSpell" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuTable">
+      <button id="ContextMenuTableButton" label="ContextMenuTable" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuTableWhole">
+      <button id="ContextMenuTableWholeButton" label="ContextMenuTableWhole" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuTextEdit">
+      <button id="ContextMenuTextEditButton" label="ContextMenuTextEdit" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuTextEditOutline">
+      <button id="ContextMenuTextEditOutlineButton" label="ContextMenuTextEditOutline" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuThumbnail">
+      <button id="ContextMenuThumbnailButton" label="ContextMenuThumbnail" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+    <contextMenu idMso="ContextMenuVideo">
+      <button id="ContextMenuVideoButton" label="ContextMenuVideo" imageMso="HappyFace" onAction="Button_Click" />
+    </contextMenu>
+  </contextMenus>
+</customUI>
